@@ -1,10 +1,10 @@
 package main
 
 /*
-extern void hello(char *s, char *fish);
+extern void hello(int n, char *s, char *fish);
 */
 import "C"
 
 func main() {
-	C.hello(C.CString("C-World"), C.CString("🐟"))
+	C.hello(C.int(20), C.CString("C-World"), C.CString("🐟"))
 }

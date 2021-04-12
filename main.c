@@ -1,12 +1,11 @@
 # include "main.h"
 
-void hello(char *s, char *fish)
+void hello(int n, char *s, char *fish)
 {
     int i, j;
-    int N = 10;
-    char *fishes = malloc((strlen(fish) * N + 1) * sizeof(char));
+        char *fishes = malloc((strlen(fish) * n + 1) * sizeof(char));
 
-    for (i = 0; i < N; i++)
+    for (i = 0; i < n; i++)
     {
         for (j = 0; j < i + 1; j++)
         {

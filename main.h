@@ -2,4 +2,4 @@
 #include <stdlib.h>
 #include <string.h>
 
-void hello(char *s, char *fish);
+void hello(int n, char *s, char *fish);
